@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Contatos</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="app">
+        <div class="content-form">
+            <form id="contactForm">
+                <div class="input-group">
+                    <input id="firstName" placeholder="Nome" required />
+                    <input id="lastName" placeholder="Sobrenome" required />
+                </div>
+                <div class="input-group">
+                    <input type="text" id="phone" placeholder="Telefone (com DDD)" required />
+                    <button class="btn-app" id="addButton" type="submit">Cadastrar</button>
+                    <button class="btn-app" id="editButton" type="button" style="display: none;">Editar</button>
+                </div>
+            </form>
+        </div>
+        <div class="content-list">
+            <div class="content-list-container">
+                <ul id="contactList"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
